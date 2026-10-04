@@ -1,0 +1,2 @@
+KnowledgeGraph_Builder/models/**/*.safetensors filter=lfs diff=lfs merge=lfs -text
+KnowledgeGraph_Builder/models/**/*.bin filter=lfs diff=lfs merge=lfs -text

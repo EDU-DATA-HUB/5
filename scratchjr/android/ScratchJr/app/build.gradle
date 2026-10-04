@@ -1,0 +1,106 @@
+apply plugin: 'com.android.application'
+
+android {
+    namespace "org.scratchjr.android"
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "org.scratchjr.android"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    flavorDimensions 'scratchjrversion'
+    productFlavors {
+        free {
+            dimension = 'scratchjrversion'
+            applicationId "org.scratchjr.androidfree"
+            minSdkVersion 21
+            targetSdkVersion 34
+            versionCode 22
+            versionName "1.2.11"
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    buildFeatures {
+        buildConfig true
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.google.firebase:firebase-core:17.2.0'
+    implementation 'com.google.firebase:firebase-analytics:17.2.0'
+    implementation 'com.google.android.gms:play-services-location:17.0.0'
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+}
+
+def appModuleRootFolder = '.'
+def srcDir = 'src'
+def googleServicesJson = 'google-services.json'
+def commonHome = '../../..'
+def html5Assets = 'src/main/assets/HTML5'
+
+task switchToFree(type: Copy) {
+    def buildType = 'free'
+    from "${commonHome}/editions/${buildType}/src"
+    into html5Assets
+}
+
+task generateWebpackBundle(type: Exec) {
+    workingDir '../../../'
+    environment 'NODE_OPTIONS', '--openssl-legacy-provider'
+    commandLine 'node', 'node_modules/webpack/bin/webpack.js', '--mode=production'
+}
+
+task copyWebpackBundle(type: Copy) {
+    from "${commonHome}/src/build/bundles/app.bundle.js"
+    into html5Assets
+    dependsOn generateWebpackBundle
+}
+
+task generateScratchJrPNGs {
+    doLast {
+        file("src/main/assets/HTML5/pnglibrary").mkdirs()
+    }
+}
+
+task cleanScratchJrResources {
+    doLast {
+        delete file('src/main/assets')
+    }
+}
+
+afterEvaluate {
+    preBuild.dependsOn generateWebpackBundle
+
+    generateFreeReleaseResources.dependsOn switchToFree
+    generateFreeDebugResources.dependsOn switchToFree
+    generateFreeReleaseResources.dependsOn generateScratchJrPNGs
+    generateFreeDebugResources.dependsOn generateScratchJrPNGs
+    generateScratchJrPNGs.mustRunAfter switchToFree
+
+    generateFreeReleaseResources.dependsOn copyWebpackBundle
+    generateFreeDebugResources.dependsOn copyWebpackBundle
+    copyWebpackBundle.mustRunAfter switchToFree
+
+    tasks.matching { it.name in ['mergeFreeDebugAssets', 'mergeFreeReleaseAssets'] }.configureEach {
+        dependsOn switchToFree
+        dependsOn copyWebpackBundle
+        dependsOn generateScratchJrPNGs
+    }
+}
+
+clean.dependsOn('cleanScratchJrResources')
+
+apply plugin: 'com.google.gms.google-services'
