@@ -1,2 +1,7 @@
 KnowledgeGraph_Builder/models/**/*.safetensors filter=lfs diff=lfs merge=lfs -text
 KnowledgeGraph_Builder/models/**/*.bin filter=lfs diff=lfs merge=lfs -text
+KnowledgeGraph_Builder/.python37/Lib/site-packages/en_core_web_lg/en_core_web_lg-2.1.0/vocab/lexemes.bin filter=lfs diff=lfs merge=lfs -text
+KnowledgeGraph_Builder/.python37/Lib/site-packages/en_core_web_lg/en_core_web_lg-2.1.0/vocab/vectors filter=lfs diff=lfs merge=lfs -text
+KnowledgeGraph_Builder/.python37/Lib/site-packages/torch/lib/dnnl.lib filter=lfs diff=lfs merge=lfs -text
+KnowledgeGraph_Builder/.python37/Lib/site-packages/torch/lib/torch_cpu.dll filter=lfs diff=lfs merge=lfs -text
+KnowledgeGraph_Builder/stanford-corenlp-4.2.0/stanford-corenlp-4.2.0-models.jar filter=lfs diff=lfs merge=lfs -text
