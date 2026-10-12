@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black_overlay">#66000000</color>
+    <string name="app_name">ScratchJr Free</string>
+    <string name="app_version">1.2.0</string>
+    <string name="gcm_defaultSenderId" translatable="false">123456789012</string>
+    <string name="google_api_key" translatable="false">AIzaSyDUMMYKEYFORLOCALDEVELOPMENTONLY</string>
+    <string name="google_app_id" translatable="false">1:123456789012:android:1234567890abcdef</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyDUMMYKEYFORLOCALDEVELOPMENTONLY</string>
+    <string name="google_storage_bucket" translatable="false">scratchjr-local-dev.appspot.com</string>
+    <string name="project_id" translatable="false">scratchjr-local-dev</string>
+    <string name="share_extension_filter">.*\\.sjr</string>
+    <string name="share_mimetype">application/x-scratchjr-project</string>
+    <string name="sql_add_gift">
+        ALTER TABLE PROJECTS ADD COLUMN ISGIFT INTEGER DEFAULT 0;
+    </string>
+    <string name="sql_create_projects">CREATE TABLE IF NOT EXISTS PROJECTS (
+        ID INTEGER PRIMARY KEY AUTOINCREMENT,
+        CTIME DATETIME DEFAULT CURRENT_TIMESTAMP,
+        MTIME DATETIME,
+        ALTMD5 TEXT,
+        POS INTEGER,
+        NAME TEXT,
+        JSON TEXT,
+        THUMBNAIL TEXT,
+        OWNER TEXT,
+        GALLERY TEXT,
+        DELETED TEXT,
+        VERSION TEXT
+    )</string>
+    <string name="sql_create_userbkgs">CREATE TABLE IF NOT EXISTS USERBKGS (
+        ID INTEGER PRIMARY KEY AUTOINCREMENT,
+        CTIME DATETIME DEFAULT CURRENT_TIMESTAMP,
+        MD5 TEXT,
+        ALTMD5 TEXT,
+        WIDTH TEXT,
+        HEIGHT TEXT,
+        EXT TEXT,
+        OWNER TEXT,
+        VERSION TEXT
+    )</string>
+    <string name="sql_create_usershapes">CREATE TABLE IF NOT EXISTS USERSHAPES (
+        ID INTEGER PRIMARY KEY AUTOINCREMENT,
+        CTIME DATETIME DEFAULT CURRENT_TIMESTAMP,
+        MD5 TEXT,
+        ALTMD5 TEXT,
+        WIDTH TEXT,
+        HEIGHT TEXT,
+        EXT TEXT,
+        NAME TEXT,
+        OWNER TEXT,
+        SCALE TEXT,
+        VERSION TEXT
+    )</string>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        
+    </style>
+    <style name="ButtonBar">
+        <item name="android:paddingLeft">2dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingRight">2dp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:background">@android:drawable/bottom_bar</item>
+    </style>
+    <style name="ButtonBarButton"/>
+    <style name="FullscreenTheme" parent="android:Theme.NoTitleBar">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="metaButtonBarStyle">@style/ButtonBar</item>
+        <item name="metaButtonBarButtonStyle">@style/ButtonBarButton</item>
+    </style>
+    <declare-styleable name="ButtonBarContainerTheme">
+        <attr format="reference" name="metaButtonBarStyle"/>
+        <attr format="reference" name="metaButtonBarButtonStyle"/>
+    </declare-styleable>
+</resources>

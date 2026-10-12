@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "org.scratchjr.android.app-mergeFreeDebugResources-8:/values-ldltr-v21/values-ldltr-v21.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\Winner\\AppData\\Local\\Temp\\cursor-sandbox-cache\\ed579510f1785ae475b9a8796467517e\\gradle\\caches\\transforms-4\\aa3ed35c48a7314068b80f3d91143d8f\\transformed\\appcompat-1.1.0\\res\\values-ldltr-v21\\values-ldltr-v21.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "112",
+                        "endOffsets": "163"
+                    }
+                }
+            ]
+        }
+    ]
+}

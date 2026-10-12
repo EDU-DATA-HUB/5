@@ -1,0 +1,10 @@
+#Wed Sep 30 16:46:05 JST 2026
+base.2=D\:\\boss-task\\scratchjr\\android\\ScratchJr\\app\\build\\intermediates\\dex\\freeDebug\\mergeProjectDexFreeDebug\\11\\classes.dex
+path.2=11/classes.dex
+base.1=D\:\\boss-task\\scratchjr\\android\\ScratchJr\\app\\build\\intermediates\\dex\\freeDebug\\mergeProjectDexFreeDebug\\0\\classes.dex
+path.1=0/classes.dex
+base.0=D\:\\boss-task\\scratchjr\\android\\ScratchJr\\app\\build\\intermediates\\dex\\freeDebug\\mergeExtDexFreeDebug\\classes.dex
+renamed.2=classes3.dex
+renamed.1=classes2.dex
+renamed.0=classes.dex
+path.0=classes.dex

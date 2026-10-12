@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="main$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="D:\boss-task\scratchjr\android\ScratchJr\app\src\main\res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="main" generated-set="main$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="D:\boss-task\scratchjr\android\ScratchJr\app\src\main\res"><file name="activity_blank" path="D:\boss-task\scratchjr\android\ScratchJr\app\src\main\res\layout\activity_blank.xml" qualifiers="" type="layout"/><file name="activity_scratch_jr" path="D:\boss-task\scratchjr\android\ScratchJr\app\src\main\res\layout\activity_scratch_jr.xml" qualifiers="" type="layout"/><file name="ic_launcher" path="D:\boss-task\scratchjr\android\ScratchJr\app\src\main\res\mipmap-hdpi\ic_launcher.png" qualifiers="hdpi-v4" type="mipmap"/><file name="ic_launcher" path="D:\boss-task\scratchjr\android\ScratchJr\app\src\main\res\mipmap-mdpi\ic_launcher.png" qualifiers="mdpi-v4" type="mipmap"/><file name="ic_launcher" path="D:\boss-task\scratchjr\android\ScratchJr\app\src\main\res\mipmap-xhdpi\ic_launcher.png" qualifiers="xhdpi-v4" type="mipmap"/><file name="ic_launcher" path="D:\boss-task\scratchjr\android\ScratchJr\app\src\main\res\mipmap-xxhdpi\ic_launcher.png" qualifiers="xxhdpi-v4" type="mipmap"/><file name="ic_launcher" path="D:\boss-task\scratchjr\android\ScratchJr\app\src\main\res\mipmap-xxxhdpi\ic_launcher.png" qualifiers="xxxhdpi-v4" type="mipmap"/><file path="D:\boss-task\scratchjr\android\ScratchJr\app\src\main\res\values\attrs.xml" qualifiers=""><declare-styleable name="ButtonBarContainerTheme">
+        <attr format="reference" name="metaButtonBarStyle"/>
+        <attr format="reference" name="metaButtonBarButtonStyle"/>
+    </declare-styleable></file><file path="D:\boss-task\scratchjr\android\ScratchJr\app\src\main\res\values\colors.xml" qualifiers=""><color name="black_overlay">#66000000</color></file><file path="D:\boss-task\scratchjr\android\ScratchJr\app\src\main\res\values\dimens.xml" qualifiers=""/><file path="D:\boss-task\scratchjr\android\ScratchJr\app\src\main\res\values\sql.xml" qualifiers=""><string name="sql_create_projects">CREATE TABLE IF NOT EXISTS PROJECTS (
+        ID INTEGER PRIMARY KEY AUTOINCREMENT,
+        CTIME DATETIME DEFAULT CURRENT_TIMESTAMP,
+        MTIME DATETIME,
+        ALTMD5 TEXT,
+        POS INTEGER,
+        NAME TEXT,
+        JSON TEXT,
+        THUMBNAIL TEXT,
+        OWNER TEXT,
+        GALLERY TEXT,
+        DELETED TEXT,
+        VERSION TEXT
+    )</string><string name="sql_create_usershapes">CREATE TABLE IF NOT EXISTS USERSHAPES (
+        ID INTEGER PRIMARY KEY AUTOINCREMENT,
+        CTIME DATETIME DEFAULT CURRENT_TIMESTAMP,
+        MD5 TEXT,
+        ALTMD5 TEXT,
+        WIDTH TEXT,
+        HEIGHT TEXT,
+        EXT TEXT,
+        NAME TEXT,
+        OWNER TEXT,
+        SCALE TEXT,
+        VERSION TEXT
+    )</string><string name="sql_create_userbkgs">CREATE TABLE IF NOT EXISTS USERBKGS (
+        ID INTEGER PRIMARY KEY AUTOINCREMENT,
+        CTIME DATETIME DEFAULT CURRENT_TIMESTAMP,
+        MD5 TEXT,
+        ALTMD5 TEXT,
+        WIDTH TEXT,
+        HEIGHT TEXT,
+        EXT TEXT,
+        OWNER TEXT,
+        VERSION TEXT
+    )</string><string name="sql_add_gift">
+        ALTER TABLE PROJECTS ADD COLUMN ISGIFT INTEGER DEFAULT 0;
+    </string></file><file path="D:\boss-task\scratchjr\android\ScratchJr\app\src\main\res\values\strings.xml" qualifiers=""><string name="app_name">ScratchJr Free</string><string name="app_version">1.2.0</string><string name="share_extension_filter">.*\\.sjr</string><string name="share_mimetype">application/x-scratchjr-project</string></file><file path="D:\boss-task\scratchjr\android\ScratchJr\app\src\main\res\values\styles.xml" qualifiers=""><style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        
+    </style><style name="FullscreenTheme" parent="android:Theme.NoTitleBar">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="metaButtonBarStyle">@style/ButtonBar</item>
+        <item name="metaButtonBarButtonStyle">@style/ButtonBarButton</item>
+    </style><style name="ButtonBar">
+        <item name="android:paddingLeft">2dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingRight">2dp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:background">@android:drawable/bottom_bar</item>
+    </style><style name="ButtonBarButton"/></file></source></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="free$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="D:\boss-task\scratchjr\android\ScratchJr\app\src\free\res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="free" generated-set="free$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="D:\boss-task\scratchjr\android\ScratchJr\app\src\free\res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="debug$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="D:\boss-task\scratchjr\android\ScratchJr\app\src\debug\res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="debug" generated-set="debug$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="D:\boss-task\scratchjr\android\ScratchJr\app\src\debug\res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="generated$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="D:\boss-task\scratchjr\android\ScratchJr\app\build\generated\res\resValues\free\debug"/><source path="D:\boss-task\scratchjr\android\ScratchJr\app\build\generated\res\processFreeDebugGoogleServices"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="generated" generated-set="generated$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="D:\boss-task\scratchjr\android\ScratchJr\app\build\generated\res\resValues\free\debug"/><source path="D:\boss-task\scratchjr\android\ScratchJr\app\build\generated\res\processFreeDebugGoogleServices"><file path="D:\boss-task\scratchjr\android\ScratchJr\app\build\generated\res\processFreeDebugGoogleServices\values\values.xml" qualifiers=""><string name="gcm_defaultSenderId" translatable="false">123456789012</string><string name="google_api_key" translatable="false">AIzaSyDUMMYKEYFORLOCALDEVELOPMENTONLY</string><string name="google_app_id" translatable="false">1:123456789012:android:1234567890abcdef</string><string name="google_crash_reporting_api_key" translatable="false">AIzaSyDUMMYKEYFORLOCALDEVELOPMENTONLY</string><string name="google_storage_bucket" translatable="false">scratchjr-local-dev.appspot.com</string><string name="project_id" translatable="false">scratchjr-local-dev</string></file></source></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="variant$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="D:\boss-task\scratchjr\android\ScratchJr\app\src\freeDebug\res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="variant" generated-set="variant$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="D:\boss-task\scratchjr\android\ScratchJr\app\src\freeDebug\res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="res-processFreeDebugGoogleServices$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"/><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="res-processFreeDebugGoogleServices" generated-set="res-processFreeDebugGoogleServices$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"/><mergedItems><configuration qualifiers=""><declare-styleable name="ButtonBarContainerTheme">
+        <attr format="reference" name="metaButtonBarStyle"/>
+        <attr format="reference" name="metaButtonBarButtonStyle"/>
+    </declare-styleable></configuration></mergedItems></merger>

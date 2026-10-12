@@ -1,0 +1,15 @@
+org.scratchjr.android.app-core-1.1.0-0 C:\Users\Winner\AppData\Local\Temp\cursor-sandbox-cache\ed579510f1785ae475b9a8796467517e\gradle\caches\transforms-4\3af42f26b62cda8d6e6b7c7fb64484a8\transformed\core-1.1.0\res
+org.scratchjr.android.app-jetified-play-services-base-17.0.0-1 C:\Users\Winner\AppData\Local\Temp\cursor-sandbox-cache\ed579510f1785ae475b9a8796467517e\gradle\caches\transforms-4\61b32aa7ef714986e12f1df714d8e4e8\transformed\jetified-play-services-base-17.0.0\res
+org.scratchjr.android.app-appcompat-1.1.0-2 C:\Users\Winner\AppData\Local\Temp\cursor-sandbox-cache\ed579510f1785ae475b9a8796467517e\gradle\caches\transforms-4\aa3ed35c48a7314068b80f3d91143d8f\transformed\appcompat-1.1.0\res
+org.scratchjr.android.app-jetified-play-services-basement-17.0.0-3 C:\Users\Winner\AppData\Local\Temp\cursor-sandbox-cache\ed579510f1785ae475b9a8796467517e\gradle\caches\transforms-4\ad4d0519b9edb573597fb3e2c19b6e96\transformed\jetified-play-services-basement-17.0.0\res
+org.scratchjr.android.app-jetified-appcompat-resources-1.1.0-4 C:\Users\Winner\AppData\Local\Temp\cursor-sandbox-cache\ed579510f1785ae475b9a8796467517e\gradle\caches\transforms-4\ca616e039a08c66cb7f902e948c7e736\transformed\jetified-appcompat-resources-1.1.0\res
+org.scratchjr.android.app-free-5 D:\boss-task\scratchjr\android\ScratchJr\app\build\generated\res\pngs\free\debug
+org.scratchjr.android.app-res-6 D:\boss-task\scratchjr\android\ScratchJr\app\build\generated\res\processFreeDebugGoogleServices
+org.scratchjr.android.app-free-7 D:\boss-task\scratchjr\android\ScratchJr\app\build\generated\res\resValues\free\debug
+org.scratchjr.android.app-packageFreeDebugResources-8 D:\boss-task\scratchjr\android\ScratchJr\app\build\intermediates\incremental\freeDebug\packageFreeDebugResources\merged.dir
+org.scratchjr.android.app-packageFreeDebugResources-9 D:\boss-task\scratchjr\android\ScratchJr\app\build\intermediates\incremental\freeDebug\packageFreeDebugResources\stripped.dir
+org.scratchjr.android.app-freeDebug-10 D:\boss-task\scratchjr\android\ScratchJr\app\build\intermediates\merged_res\freeDebug\mergeFreeDebugResources
+org.scratchjr.android.app-debug-11 D:\boss-task\scratchjr\android\ScratchJr\app\src\debug\res
+org.scratchjr.android.app-free-12 D:\boss-task\scratchjr\android\ScratchJr\app\src\free\res
+org.scratchjr.android.app-freeDebug-13 D:\boss-task\scratchjr\android\ScratchJr\app\src\freeDebug\res
+org.scratchjr.android.app-main-14 D:\boss-task\scratchjr\android\ScratchJr\app\src\main\res

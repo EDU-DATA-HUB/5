@@ -1,0 +1,29 @@
+R_DEF: Internal format may change without notice
+local
+attr? metaButtonBarButtonStyle
+attr? metaButtonBarStyle
+color black_overlay
+id container
+id webview
+layout activity_blank
+layout activity_scratch_jr
+mipmap ic_launcher
+string app_name
+string app_version
+string gcm_defaultSenderId
+string google_api_key
+string google_app_id
+string google_crash_reporting_api_key
+string google_storage_bucket
+string project_id
+string share_extension_filter
+string share_mimetype
+string sql_add_gift
+string sql_create_projects
+string sql_create_userbkgs
+string sql_create_usershapes
+style AppTheme
+style ButtonBar
+style ButtonBarButton
+style FullscreenTheme
+styleable ButtonBarContainerTheme metaButtonBarStyle metaButtonBarButtonStyle

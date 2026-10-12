@@ -1,0 +1,30 @@
+[
+    {
+        "merged": "org.scratchjr.android.app-freeDebug-10:/layout_activity_scratch_jr.xml.flat",
+        "source": "org.scratchjr.android.app-main-14:/layout/activity_scratch_jr.xml"
+    },
+    {
+        "merged": "org.scratchjr.android.app-freeDebug-10:/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "org.scratchjr.android.app-main-14:/mipmap-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "org.scratchjr.android.app-freeDebug-10:/layout_activity_blank.xml.flat",
+        "source": "org.scratchjr.android.app-main-14:/layout/activity_blank.xml"
+    },
+    {
+        "merged": "org.scratchjr.android.app-freeDebug-10:/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "org.scratchjr.android.app-main-14:/mipmap-xxxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "org.scratchjr.android.app-freeDebug-10:/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "org.scratchjr.android.app-main-14:/mipmap-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "org.scratchjr.android.app-freeDebug-10:/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "org.scratchjr.android.app-main-14:/mipmap-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "org.scratchjr.android.app-freeDebug-10:/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "org.scratchjr.android.app-main-14:/mipmap-xhdpi/ic_launcher.png"
+    }
+]

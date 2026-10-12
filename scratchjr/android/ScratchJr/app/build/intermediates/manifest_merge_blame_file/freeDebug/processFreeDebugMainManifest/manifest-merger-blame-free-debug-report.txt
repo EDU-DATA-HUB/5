@@ -1,0 +1,340 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="org.scratchjr.androidfree"
+4    android:versionCode="22"
+5    android:versionName="1.2.11" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+9        android:targetSdkVersion="34" />
+10
+11    <uses-permission android:name="android.permission.CAMERA" />
+11-->D:\boss-task\scratchjr\android\ScratchJr\app\src\main\AndroidManifest.xml:5:5-65
+11-->D:\boss-task\scratchjr\android\ScratchJr\app\src\main\AndroidManifest.xml:5:22-62
+12    <uses-permission android:name="android.permission.INTERNET" />
+12-->D:\boss-task\scratchjr\android\ScratchJr\app\src\main\AndroidManifest.xml:6:5-66
+12-->D:\boss-task\scratchjr\android\ScratchJr\app\src\main\AndroidManifest.xml:6:22-64
+13    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+13-->D:\boss-task\scratchjr\android\ScratchJr\app\src\main\AndroidManifest.xml:7:5-78
+13-->D:\boss-task\scratchjr\android\ScratchJr\app\src\main\AndroidManifest.xml:7:22-76
+14    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+14-->D:\boss-task\scratchjr\android\ScratchJr\app\src\main\AndroidManifest.xml:8:5-70
+14-->D:\boss-task\scratchjr\android\ScratchJr\app\src\main\AndroidManifest.xml:8:22-68
+15    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+15-->D:\boss-task\scratchjr\android\ScratchJr\app\src\main\AndroidManifest.xml:9:5-79
+15-->D:\boss-task\scratchjr\android\ScratchJr\app\src\main\AndroidManifest.xml:9:22-77
+16
+17    <uses-feature
+17-->D:\boss-task\scratchjr\android\ScratchJr\app\src\main\AndroidManifest.xml:11:5-85
+18        android:name="android.hardware.camera"
+18-->D:\boss-task\scratchjr\android\ScratchJr\app\src\main\AndroidManifest.xml:11:19-57
+19        android:required="false" />
+19-->D:\boss-task\scratchjr\android\ScratchJr\app\src\main\AndroidManifest.xml:11:58-82
+20    <uses-feature
+20-->D:\boss-task\scratchjr\android\ScratchJr\app\src\main\AndroidManifest.xml:12:5-89
+21        android:name="android.hardware.microphone"
+21-->D:\boss-task\scratchjr\android\ScratchJr\app\src\main\AndroidManifest.xml:12:19-61
+22        android:required="false" />
+22-->D:\boss-task\scratchjr\android\ScratchJr\app\src\main\AndroidManifest.xml:12:62-86
+23
+24    <supports-screens android:requiresSmallestWidthDp="320" />
+24-->D:\boss-task\scratchjr\android\ScratchJr\app\src\main\AndroidManifest.xml:14:5-63
+24-->D:\boss-task\scratchjr\android\ScratchJr\app\src\main\AndroidManifest.xml:14:23-60
+25
+26    <uses-permission android:name="android.permission.WAKE_LOCK" />
+26-->[com.google.android.gms:play-services-measurement:17.2.0] C:\Users\Winner\AppData\Local\Temp\cursor-sandbox-cache\ed579510f1785ae475b9a8796467517e\gradle\caches\transforms-4\8b0e8f9c97655523dd06fbac830bcbba\transformed\jetified-play-services-measurement-17.2.0\AndroidManifest.xml:25:5-68
+26-->[com.google.android.gms:play-services-measurement:17.2.0] C:\Users\Winner\AppData\Local\Temp\cursor-sandbox-cache\ed579510f1785ae475b9a8796467517e\gradle\caches\transforms-4\8b0e8f9c97655523dd06fbac830bcbba\transformed\jetified-play-services-measurement-17.2.0\AndroidManifest.xml:25:22-65
+27    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+27-->[com.google.android.gms:play-services-measurement:17.2.0] C:\Users\Winner\AppData\Local\Temp\cursor-sandbox-cache\ed579510f1785ae475b9a8796467517e\gradle\caches\transforms-4\8b0e8f9c97655523dd06fbac830bcbba\transformed\jetified-play-services-measurement-17.2.0\AndroidManifest.xml:26:5-110
+27-->[com.google.android.gms:play-services-measurement:17.2.0] C:\Users\Winner\AppData\Local\Temp\cursor-sandbox-cache\ed579510f1785ae475b9a8796467517e\gradle\caches\transforms-4\8b0e8f9c97655523dd06fbac830bcbba\transformed\jetified-play-services-measurement-17.2.0\AndroidManifest.xml:26:22-107
+28    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+28-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\Winner\AppData\Local\Temp\cursor-sandbox-cache\ed579510f1785ae475b9a8796467517e\gradle\caches\transforms-4\9d4e20437886d057034d25e35fead84c\transformed\jetified-firebase-iid-19.0.0\AndroidManifest.xml:26:5-82
+28-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\Winner\AppData\Local\Temp\cursor-sandbox-cache\ed579510f1785ae475b9a8796467517e\gradle\caches\transforms-4\9d4e20437886d057034d25e35fead84c\transformed\jetified-firebase-iid-19.0.0\AndroidManifest.xml:26:22-79
+29
+30    <application
+30-->D:\boss-task\scratchjr\android\ScratchJr\app\src\main\AndroidManifest.xml:15:5-87:19
+31        android:allowBackup="true"
+31-->D:\boss-task\scratchjr\android\ScratchJr\app\src\main\AndroidManifest.xml:16:9-35
+32        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+32-->[androidx.core:core:1.1.0] C:\Users\Winner\AppData\Local\Temp\cursor-sandbox-cache\ed579510f1785ae475b9a8796467517e\gradle\caches\transforms-4\3af42f26b62cda8d6e6b7c7fb64484a8\transformed\core-1.1.0\AndroidManifest.xml:24:18-86
+33        android:debuggable="true"
+34        android:extractNativeLibs="true"
+35        android:hardwareAccelerated="true"
+35-->D:\boss-task\scratchjr\android\ScratchJr\app\src\main\AndroidManifest.xml:20:9-43
+36        android:icon="@mipmap/ic_launcher"
+36-->D:\boss-task\scratchjr\android\ScratchJr\app\src\main\AndroidManifest.xml:17:9-43
+37        android:label="@string/app_name"
+37-->D:\boss-task\scratchjr\android\ScratchJr\app\src\main\AndroidManifest.xml:18:9-41
+38        android:resizeableActivity="false"
+38-->D:\boss-task\scratchjr\android\ScratchJr\app\src\main\AndroidManifest.xml:21:9-43
+39        android:theme="@style/AppTheme" >
+39-->D:\boss-task\scratchjr\android\ScratchJr\app\src\main\AndroidManifest.xml:19:9-40
+40        <provider
+41            android:name="org.scratchjr.android.ShareContentProvider"
+41-->D:\boss-task\scratchjr\android\ScratchJr\app\src\main\AndroidManifest.xml:22:19-54
+42            android:authorities="org.scratchjr.androidfree.ShareContentProvider"
+42-->D:\boss-task\scratchjr\android\ScratchJr\app\src\main\AndroidManifest.xml:25:19-78
+43            android:exported="false"
+43-->D:\boss-task\scratchjr\android\ScratchJr\app\src\main\AndroidManifest.xml:24:19-43
+44            android:grantUriPermissions="true" >
+44-->D:\boss-task\scratchjr\android\ScratchJr\app\src\main\AndroidManifest.xml:23:19-53
+45        </provider>
+46
+47        <activity
+47-->D:\boss-task\scratchjr\android\ScratchJr\app\src\main\AndroidManifest.xml:28:9-75:20
+48            android:name="org.scratchjr.android.ScratchJrActivity"
+48-->D:\boss-task\scratchjr\android\ScratchJr\app\src\main\AndroidManifest.xml:29:13-46
+49            android:configChanges="keyboard|keyboardHidden"
+49-->D:\boss-task\scratchjr\android\ScratchJr\app\src\main\AndroidManifest.xml:32:13-60
+50            android:exported="true"
+50-->D:\boss-task\scratchjr\android\ScratchJr\app\src\main\AndroidManifest.xml:35:13-36
+51            android:label="@string/app_name"
+51-->D:\boss-task\scratchjr\android\ScratchJr\app\src\main\AndroidManifest.xml:30:13-45
+52            android:launchMode="singleTask"
+52-->D:\boss-task\scratchjr\android\ScratchJr\app\src\main\AndroidManifest.xml:34:13-44
+53            android:theme="@style/FullscreenTheme"
+53-->D:\boss-task\scratchjr\android\ScratchJr\app\src\main\AndroidManifest.xml:33:13-51
+54            android:windowSoftInputMode="adjustResize" >
+54-->D:\boss-task\scratchjr\android\ScratchJr\app\src\main\AndroidManifest.xml:31:13-55
+55            <intent-filter>
+55-->D:\boss-task\scratchjr\android\ScratchJr\app\src\main\AndroidManifest.xml:36:13-39:29
+56                <action android:name="android.intent.action.MAIN" />
+56-->D:\boss-task\scratchjr\android\ScratchJr\app\src\main\AndroidManifest.xml:37:17-69
+56-->D:\boss-task\scratchjr\android\ScratchJr\app\src\main\AndroidManifest.xml:37:25-66
+57
+58                <category android:name="android.intent.category.LAUNCHER" />
+58-->D:\boss-task\scratchjr\android\ScratchJr\app\src\main\AndroidManifest.xml:38:17-77
+58-->D:\boss-task\scratchjr\android\ScratchJr\app\src\main\AndroidManifest.xml:38:27-74
+59            </intent-filter>
+60            <intent-filter>
+60-->D:\boss-task\scratchjr\android\ScratchJr\app\src\main\AndroidManifest.xml:40:13-55:29
+61                <action android:name="android.intent.action.VIEW" />
+61-->D:\boss-task\scratchjr\android\ScratchJr\app\src\main\AndroidManifest.xml:41:17-69
+61-->D:\boss-task\scratchjr\android\ScratchJr\app\src\main\AndroidManifest.xml:41:25-66
+62
+63                <category android:name="android.intent.category.DEFAULT" />
+63-->D:\boss-task\scratchjr\android\ScratchJr\app\src\main\AndroidManifest.xml:42:17-76
+63-->D:\boss-task\scratchjr\android\ScratchJr\app\src\main\AndroidManifest.xml:42:27-73
+64                <category android:name="android.intent.category.BROWSABLE" />
+64-->D:\boss-task\scratchjr\android\ScratchJr\app\src\main\AndroidManifest.xml:43:17-78
+64-->D:\boss-task\scratchjr\android\ScratchJr\app\src\main\AndroidManifest.xml:43:27-75
+65
+66                <data android:scheme="file" />
+66-->D:\boss-task\scratchjr\android\ScratchJr\app\src\main\AndroidManifest.xml:44:17-47
+66-->D:\boss-task\scratchjr\android\ScratchJr\app\src\main\AndroidManifest.xml:44:23-44
+67                <data android:mimeType="*/*" />
+67-->D:\boss-task\scratchjr\android\ScratchJr\app\src\main\AndroidManifest.xml:44:17-47
+67-->D:\boss-task\scratchjr\android\ScratchJr\app\src\main\AndroidManifest.xml:45:23-45
+68                <data android:pathPattern="@string/share_extension_filter" />
+68-->D:\boss-task\scratchjr\android\ScratchJr\app\src\main\AndroidManifest.xml:44:17-47
+68-->D:\boss-task\scratchjr\android\ScratchJr\app\src\main\AndroidManifest.xml:46:23-75
+69                <!--
+70                These additional pathPattern blocks are to allow for paths with
+71                additional periods in them. See:
+72                http://stackoverflow.com/questions/3400072/pathpattern-to-match-file-extension-does-not-work-if-a-period-exists-elsewhere-i/8599921
+73                -->
+74                <data android:pathPattern=".*\\..*\\.sjr" />
+74-->D:\boss-task\scratchjr\android\ScratchJr\app\src\main\AndroidManifest.xml:44:17-47
+74-->D:\boss-task\scratchjr\android\ScratchJr\app\src\main\AndroidManifest.xml:46:23-75
+75                <data android:pathPattern=".*\\..*\\..*\\.sjr" />
+75-->D:\boss-task\scratchjr\android\ScratchJr\app\src\main\AndroidManifest.xml:44:17-47
+75-->D:\boss-task\scratchjr\android\ScratchJr\app\src\main\AndroidManifest.xml:46:23-75
+76                <data android:pathPattern=".*\\..*\\..*\\..*\\.sjr" />
+76-->D:\boss-task\scratchjr\android\ScratchJr\app\src\main\AndroidManifest.xml:44:17-47
+76-->D:\boss-task\scratchjr\android\ScratchJr\app\src\main\AndroidManifest.xml:46:23-75
+77                <data android:pathPattern=".*\\..*\\..*\\..*\\..*\\.sjr" />
+77-->D:\boss-task\scratchjr\android\ScratchJr\app\src\main\AndroidManifest.xml:44:17-47
+77-->D:\boss-task\scratchjr\android\ScratchJr\app\src\main\AndroidManifest.xml:46:23-75
+78                <data android:host="*" />
+78-->D:\boss-task\scratchjr\android\ScratchJr\app\src\main\AndroidManifest.xml:44:17-47
+78-->D:\boss-task\scratchjr\android\ScratchJr\app\src\main\AndroidManifest.xml:54:23-39
+79            </intent-filter>
+80            <intent-filter>
+80-->D:\boss-task\scratchjr\android\ScratchJr\app\src\main\AndroidManifest.xml:56:13-64:29
+81                <action android:name="android.intent.action.VIEW" />
+81-->D:\boss-task\scratchjr\android\ScratchJr\app\src\main\AndroidManifest.xml:41:17-69
+81-->D:\boss-task\scratchjr\android\ScratchJr\app\src\main\AndroidManifest.xml:41:25-66
+82
+83                <category android:name="android.intent.category.DEFAULT" />
+83-->D:\boss-task\scratchjr\android\ScratchJr\app\src\main\AndroidManifest.xml:42:17-76
+83-->D:\boss-task\scratchjr\android\ScratchJr\app\src\main\AndroidManifest.xml:42:27-73
+84                <category android:name="android.intent.category.BROWSABLE" />
+84-->D:\boss-task\scratchjr\android\ScratchJr\app\src\main\AndroidManifest.xml:43:17-78
+84-->D:\boss-task\scratchjr\android\ScratchJr\app\src\main\AndroidManifest.xml:43:27-75
+85
+86                <data android:scheme="file" />
+86-->D:\boss-task\scratchjr\android\ScratchJr\app\src\main\AndroidManifest.xml:44:17-47
+86-->D:\boss-task\scratchjr\android\ScratchJr\app\src\main\AndroidManifest.xml:44:23-44
+87                <data android:scheme="content" />
+87-->D:\boss-task\scratchjr\android\ScratchJr\app\src\main\AndroidManifest.xml:44:17-47
+87-->D:\boss-task\scratchjr\android\ScratchJr\app\src\main\AndroidManifest.xml:44:23-44
+88                <data android:mimeType="@string/share_mimetype" />
+88-->D:\boss-task\scratchjr\android\ScratchJr\app\src\main\AndroidManifest.xml:44:17-47
+88-->D:\boss-task\scratchjr\android\ScratchJr\app\src\main\AndroidManifest.xml:45:23-45
+89                <data android:host="*" />
+89-->D:\boss-task\scratchjr\android\ScratchJr\app\src\main\AndroidManifest.xml:44:17-47
+89-->D:\boss-task\scratchjr\android\ScratchJr\app\src\main\AndroidManifest.xml:54:23-39
+90            </intent-filter>
+91            <intent-filter>
+91-->D:\boss-task\scratchjr\android\ScratchJr\app\src\main\AndroidManifest.xml:66:13-74:29
+92                <action android:name="android.intent.action.VIEW" />
+92-->D:\boss-task\scratchjr\android\ScratchJr\app\src\main\AndroidManifest.xml:41:17-69
+92-->D:\boss-task\scratchjr\android\ScratchJr\app\src\main\AndroidManifest.xml:41:25-66
+93
+94                <category android:name="android.intent.category.DEFAULT" />
+94-->D:\boss-task\scratchjr\android\ScratchJr\app\src\main\AndroidManifest.xml:42:17-76
+94-->D:\boss-task\scratchjr\android\ScratchJr\app\src\main\AndroidManifest.xml:42:27-73
+95                <category android:name="android.intent.category.BROWSABLE" />
+95-->D:\boss-task\scratchjr\android\ScratchJr\app\src\main\AndroidManifest.xml:43:17-78
+95-->D:\boss-task\scratchjr\android\ScratchJr\app\src\main\AndroidManifest.xml:43:27-75
+96
+97                <data android:scheme="file" />
+97-->D:\boss-task\scratchjr\android\ScratchJr\app\src\main\AndroidManifest.xml:44:17-47
+97-->D:\boss-task\scratchjr\android\ScratchJr\app\src\main\AndroidManifest.xml:44:23-44
+98                <data android:scheme="content" />
+98-->D:\boss-task\scratchjr\android\ScratchJr\app\src\main\AndroidManifest.xml:44:17-47
+98-->D:\boss-task\scratchjr\android\ScratchJr\app\src\main\AndroidManifest.xml:44:23-44
+99                <data android:mimeType="application/octet-stream" />
+99-->D:\boss-task\scratchjr\android\ScratchJr\app\src\main\AndroidManifest.xml:44:17-47
+99-->D:\boss-task\scratchjr\android\ScratchJr\app\src\main\AndroidManifest.xml:45:23-45
+100                <data android:host="*" />
+100-->D:\boss-task\scratchjr\android\ScratchJr\app\src\main\AndroidManifest.xml:44:17-47
+100-->D:\boss-task\scratchjr\android\ScratchJr\app\src\main\AndroidManifest.xml:54:23-39
+101            </intent-filter>
+102        </activity>
+103
+104        <receiver
+104-->D:\boss-task\scratchjr\android\ScratchJr\app\src\main\AndroidManifest.xml:77:9-83:20
+105            android:name="com.google.android.gms.analytics.AnalyticsReceiver"
+105-->D:\boss-task\scratchjr\android\ScratchJr\app\src\main\AndroidManifest.xml:77:19-84
+106            android:enabled="true"
+106-->D:\boss-task\scratchjr\android\ScratchJr\app\src\main\AndroidManifest.xml:78:13-35
+107            android:exported="true" >
+107-->D:\boss-task\scratchjr\android\ScratchJr\app\src\main\AndroidManifest.xml:79:13-36
+108            <intent-filter>
+108-->D:\boss-task\scratchjr\android\ScratchJr\app\src\main\AndroidManifest.xml:80:13-82:29
+109                <action android:name="com.google.android.gms.analytics.ANALYTICS_DISPATCH" />
+109-->D:\boss-task\scratchjr\android\ScratchJr\app\src\main\AndroidManifest.xml:81:17-94
+109-->D:\boss-task\scratchjr\android\ScratchJr\app\src\main\AndroidManifest.xml:81:25-91
+110            </intent-filter>
+111        </receiver>
+112
+113        <service
+113-->D:\boss-task\scratchjr\android\ScratchJr\app\src\main\AndroidManifest.xml:84:9-86:39
+114            android:name="com.google.android.gms.analytics.AnalyticsService"
+114-->D:\boss-task\scratchjr\android\ScratchJr\app\src\main\AndroidManifest.xml:84:18-82
+115            android:enabled="true"
+115-->D:\boss-task\scratchjr\android\ScratchJr\app\src\main\AndroidManifest.xml:85:13-35
+116            android:exported="false" />
+116-->D:\boss-task\scratchjr\android\ScratchJr\app\src\main\AndroidManifest.xml:86:13-37
+117
+118        <receiver
+118-->[com.google.android.gms:play-services-measurement:17.2.0] C:\Users\Winner\AppData\Local\Temp\cursor-sandbox-cache\ed579510f1785ae475b9a8796467517e\gradle\caches\transforms-4\8b0e8f9c97655523dd06fbac830bcbba\transformed\jetified-play-services-measurement-17.2.0\AndroidManifest.xml:29:9-33:20
+119            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+119-->[com.google.android.gms:play-services-measurement:17.2.0] C:\Users\Winner\AppData\Local\Temp\cursor-sandbox-cache\ed579510f1785ae475b9a8796467517e\gradle\caches\transforms-4\8b0e8f9c97655523dd06fbac830bcbba\transformed\jetified-play-services-measurement-17.2.0\AndroidManifest.xml:30:13-85
+120            android:enabled="true"
+120-->[com.google.android.gms:play-services-measurement:17.2.0] C:\Users\Winner\AppData\Local\Temp\cursor-sandbox-cache\ed579510f1785ae475b9a8796467517e\gradle\caches\transforms-4\8b0e8f9c97655523dd06fbac830bcbba\transformed\jetified-play-services-measurement-17.2.0\AndroidManifest.xml:31:13-35
+121            android:exported="false" >
+121-->[com.google.android.gms:play-services-measurement:17.2.0] C:\Users\Winner\AppData\Local\Temp\cursor-sandbox-cache\ed579510f1785ae475b9a8796467517e\gradle\caches\transforms-4\8b0e8f9c97655523dd06fbac830bcbba\transformed\jetified-play-services-measurement-17.2.0\AndroidManifest.xml:32:13-37
+122        </receiver>
+123        <receiver
+123-->[com.google.android.gms:play-services-measurement:17.2.0] C:\Users\Winner\AppData\Local\Temp\cursor-sandbox-cache\ed579510f1785ae475b9a8796467517e\gradle\caches\transforms-4\8b0e8f9c97655523dd06fbac830bcbba\transformed\jetified-play-services-measurement-17.2.0\AndroidManifest.xml:34:9-42:20
+124            android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver"
+124-->[com.google.android.gms:play-services-measurement:17.2.0] C:\Users\Winner\AppData\Local\Temp\cursor-sandbox-cache\ed579510f1785ae475b9a8796467517e\gradle\caches\transforms-4\8b0e8f9c97655523dd06fbac830bcbba\transformed\jetified-play-services-measurement-17.2.0\AndroidManifest.xml:35:13-100
+125            android:enabled="true"
+125-->[com.google.android.gms:play-services-measurement:17.2.0] C:\Users\Winner\AppData\Local\Temp\cursor-sandbox-cache\ed579510f1785ae475b9a8796467517e\gradle\caches\transforms-4\8b0e8f9c97655523dd06fbac830bcbba\transformed\jetified-play-services-measurement-17.2.0\AndroidManifest.xml:36:13-35
+126            android:exported="true"
+126-->[com.google.android.gms:play-services-measurement:17.2.0] C:\Users\Winner\AppData\Local\Temp\cursor-sandbox-cache\ed579510f1785ae475b9a8796467517e\gradle\caches\transforms-4\8b0e8f9c97655523dd06fbac830bcbba\transformed\jetified-play-services-measurement-17.2.0\AndroidManifest.xml:37:13-36
+127            android:permission="android.permission.INSTALL_PACKAGES" >
+127-->[com.google.android.gms:play-services-measurement:17.2.0] C:\Users\Winner\AppData\Local\Temp\cursor-sandbox-cache\ed579510f1785ae475b9a8796467517e\gradle\caches\transforms-4\8b0e8f9c97655523dd06fbac830bcbba\transformed\jetified-play-services-measurement-17.2.0\AndroidManifest.xml:38:13-69
+128            <intent-filter>
+128-->[com.google.android.gms:play-services-measurement:17.2.0] C:\Users\Winner\AppData\Local\Temp\cursor-sandbox-cache\ed579510f1785ae475b9a8796467517e\gradle\caches\transforms-4\8b0e8f9c97655523dd06fbac830bcbba\transformed\jetified-play-services-measurement-17.2.0\AndroidManifest.xml:39:13-41:29
+129                <action android:name="com.android.vending.INSTALL_REFERRER" />
+129-->[com.google.android.gms:play-services-measurement:17.2.0] C:\Users\Winner\AppData\Local\Temp\cursor-sandbox-cache\ed579510f1785ae475b9a8796467517e\gradle\caches\transforms-4\8b0e8f9c97655523dd06fbac830bcbba\transformed\jetified-play-services-measurement-17.2.0\AndroidManifest.xml:40:17-79
+129-->[com.google.android.gms:play-services-measurement:17.2.0] C:\Users\Winner\AppData\Local\Temp\cursor-sandbox-cache\ed579510f1785ae475b9a8796467517e\gradle\caches\transforms-4\8b0e8f9c97655523dd06fbac830bcbba\transformed\jetified-play-services-measurement-17.2.0\AndroidManifest.xml:40:25-76
+130            </intent-filter>
+131        </receiver>
+132
+133        <service
+133-->[com.google.android.gms:play-services-measurement:17.2.0] C:\Users\Winner\AppData\Local\Temp\cursor-sandbox-cache\ed579510f1785ae475b9a8796467517e\gradle\caches\transforms-4\8b0e8f9c97655523dd06fbac830bcbba\transformed\jetified-play-services-measurement-17.2.0\AndroidManifest.xml:44:9-47:40
+134            android:name="com.google.android.gms.measurement.AppMeasurementService"
+134-->[com.google.android.gms:play-services-measurement:17.2.0] C:\Users\Winner\AppData\Local\Temp\cursor-sandbox-cache\ed579510f1785ae475b9a8796467517e\gradle\caches\transforms-4\8b0e8f9c97655523dd06fbac830bcbba\transformed\jetified-play-services-measurement-17.2.0\AndroidManifest.xml:45:13-84
+135            android:enabled="true"
+135-->[com.google.android.gms:play-services-measurement:17.2.0] C:\Users\Winner\AppData\Local\Temp\cursor-sandbox-cache\ed579510f1785ae475b9a8796467517e\gradle\caches\transforms-4\8b0e8f9c97655523dd06fbac830bcbba\transformed\jetified-play-services-measurement-17.2.0\AndroidManifest.xml:46:13-35
+136            android:exported="false" />
+136-->[com.google.android.gms:play-services-measurement:17.2.0] C:\Users\Winner\AppData\Local\Temp\cursor-sandbox-cache\ed579510f1785ae475b9a8796467517e\gradle\caches\transforms-4\8b0e8f9c97655523dd06fbac830bcbba\transformed\jetified-play-services-measurement-17.2.0\AndroidManifest.xml:47:13-37
+137        <service
+137-->[com.google.android.gms:play-services-measurement:17.2.0] C:\Users\Winner\AppData\Local\Temp\cursor-sandbox-cache\ed579510f1785ae475b9a8796467517e\gradle\caches\transforms-4\8b0e8f9c97655523dd06fbac830bcbba\transformed\jetified-play-services-measurement-17.2.0\AndroidManifest.xml:48:9-52:72
+138            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+138-->[com.google.android.gms:play-services-measurement:17.2.0] C:\Users\Winner\AppData\Local\Temp\cursor-sandbox-cache\ed579510f1785ae475b9a8796467517e\gradle\caches\transforms-4\8b0e8f9c97655523dd06fbac830bcbba\transformed\jetified-play-services-measurement-17.2.0\AndroidManifest.xml:49:13-87
+139            android:enabled="true"
+139-->[com.google.android.gms:play-services-measurement:17.2.0] C:\Users\Winner\AppData\Local\Temp\cursor-sandbox-cache\ed579510f1785ae475b9a8796467517e\gradle\caches\transforms-4\8b0e8f9c97655523dd06fbac830bcbba\transformed\jetified-play-services-measurement-17.2.0\AndroidManifest.xml:50:13-35
+140            android:exported="false"
+140-->[com.google.android.gms:play-services-measurement:17.2.0] C:\Users\Winner\AppData\Local\Temp\cursor-sandbox-cache\ed579510f1785ae475b9a8796467517e\gradle\caches\transforms-4\8b0e8f9c97655523dd06fbac830bcbba\transformed\jetified-play-services-measurement-17.2.0\AndroidManifest.xml:51:13-37
+141            android:permission="android.permission.BIND_JOB_SERVICE" />
+141-->[com.google.android.gms:play-services-measurement:17.2.0] C:\Users\Winner\AppData\Local\Temp\cursor-sandbox-cache\ed579510f1785ae475b9a8796467517e\gradle\caches\transforms-4\8b0e8f9c97655523dd06fbac830bcbba\transformed\jetified-play-services-measurement-17.2.0\AndroidManifest.xml:52:13-69
+142        <service
+142-->[com.google.android.gms:play-services-measurement-api:17.2.0] C:\Users\Winner\AppData\Local\Temp\cursor-sandbox-cache\ed579510f1785ae475b9a8796467517e\gradle\caches\transforms-4\f03338bb5d58aff0866f2638c45792bf\transformed\jetified-play-services-measurement-api-17.2.0\AndroidManifest.xml:27:9-33:19
+143            android:name="com.google.firebase.components.ComponentDiscoveryService"
+143-->[com.google.android.gms:play-services-measurement-api:17.2.0] C:\Users\Winner\AppData\Local\Temp\cursor-sandbox-cache\ed579510f1785ae475b9a8796467517e\gradle\caches\transforms-4\f03338bb5d58aff0866f2638c45792bf\transformed\jetified-play-services-measurement-api-17.2.0\AndroidManifest.xml:28:13-84
+144            android:exported="false" >
+144-->[com.google.android.gms:play-services-measurement-api:17.2.0] C:\Users\Winner\AppData\Local\Temp\cursor-sandbox-cache\ed579510f1785ae475b9a8796467517e\gradle\caches\transforms-4\f03338bb5d58aff0866f2638c45792bf\transformed\jetified-play-services-measurement-api-17.2.0\AndroidManifest.xml:29:13-37
+145            <meta-data
+145-->[com.google.android.gms:play-services-measurement-api:17.2.0] C:\Users\Winner\AppData\Local\Temp\cursor-sandbox-cache\ed579510f1785ae475b9a8796467517e\gradle\caches\transforms-4\f03338bb5d58aff0866f2638c45792bf\transformed\jetified-play-services-measurement-api-17.2.0\AndroidManifest.xml:30:13-32:85
+146                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+146-->[com.google.android.gms:play-services-measurement-api:17.2.0] C:\Users\Winner\AppData\Local\Temp\cursor-sandbox-cache\ed579510f1785ae475b9a8796467517e\gradle\caches\transforms-4\f03338bb5d58aff0866f2638c45792bf\transformed\jetified-play-services-measurement-api-17.2.0\AndroidManifest.xml:31:17-139
+147                android:value="com.google.firebase.components.ComponentRegistrar" />
+147-->[com.google.android.gms:play-services-measurement-api:17.2.0] C:\Users\Winner\AppData\Local\Temp\cursor-sandbox-cache\ed579510f1785ae475b9a8796467517e\gradle\caches\transforms-4\f03338bb5d58aff0866f2638c45792bf\transformed\jetified-play-services-measurement-api-17.2.0\AndroidManifest.xml:32:17-82
+148            <meta-data
+148-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\Winner\AppData\Local\Temp\cursor-sandbox-cache\ed579510f1785ae475b9a8796467517e\gradle\caches\transforms-4\9d4e20437886d057034d25e35fead84c\transformed\jetified-firebase-iid-19.0.0\AndroidManifest.xml:32:13-34:85
+149                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+149-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\Winner\AppData\Local\Temp\cursor-sandbox-cache\ed579510f1785ae475b9a8796467517e\gradle\caches\transforms-4\9d4e20437886d057034d25e35fead84c\transformed\jetified-firebase-iid-19.0.0\AndroidManifest.xml:33:17-96
+150                android:value="com.google.firebase.components.ComponentRegistrar" />
+150-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\Winner\AppData\Local\Temp\cursor-sandbox-cache\ed579510f1785ae475b9a8796467517e\gradle\caches\transforms-4\9d4e20437886d057034d25e35fead84c\transformed\jetified-firebase-iid-19.0.0\AndroidManifest.xml:34:17-82
+151        </service>
+152
+153        <receiver
+153-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\Winner\AppData\Local\Temp\cursor-sandbox-cache\ed579510f1785ae475b9a8796467517e\gradle\caches\transforms-4\9d4e20437886d057034d25e35fead84c\transformed\jetified-firebase-iid-19.0.0\AndroidManifest.xml:37:9-44:20
+154            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+154-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\Winner\AppData\Local\Temp\cursor-sandbox-cache\ed579510f1785ae475b9a8796467517e\gradle\caches\transforms-4\9d4e20437886d057034d25e35fead84c\transformed\jetified-firebase-iid-19.0.0\AndroidManifest.xml:38:13-78
+155            android:exported="true"
+155-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\Winner\AppData\Local\Temp\cursor-sandbox-cache\ed579510f1785ae475b9a8796467517e\gradle\caches\transforms-4\9d4e20437886d057034d25e35fead84c\transformed\jetified-firebase-iid-19.0.0\AndroidManifest.xml:39:13-36
+156            android:permission="com.google.android.c2dm.permission.SEND" >
+156-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\Winner\AppData\Local\Temp\cursor-sandbox-cache\ed579510f1785ae475b9a8796467517e\gradle\caches\transforms-4\9d4e20437886d057034d25e35fead84c\transformed\jetified-firebase-iid-19.0.0\AndroidManifest.xml:40:13-73
+157            <intent-filter>
+157-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\Winner\AppData\Local\Temp\cursor-sandbox-cache\ed579510f1785ae475b9a8796467517e\gradle\caches\transforms-4\9d4e20437886d057034d25e35fead84c\transformed\jetified-firebase-iid-19.0.0\AndroidManifest.xml:41:13-43:29
+158                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+158-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\Winner\AppData\Local\Temp\cursor-sandbox-cache\ed579510f1785ae475b9a8796467517e\gradle\caches\transforms-4\9d4e20437886d057034d25e35fead84c\transformed\jetified-firebase-iid-19.0.0\AndroidManifest.xml:42:17-81
+158-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\Winner\AppData\Local\Temp\cursor-sandbox-cache\ed579510f1785ae475b9a8796467517e\gradle\caches\transforms-4\9d4e20437886d057034d25e35fead84c\transformed\jetified-firebase-iid-19.0.0\AndroidManifest.xml:42:25-78
+159            </intent-filter>
+160        </receiver>
+161
+162        <activity
+162-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\Winner\AppData\Local\Temp\cursor-sandbox-cache\ed579510f1785ae475b9a8796467517e\gradle\caches\transforms-4\61b32aa7ef714986e12f1df714d8e4e8\transformed\jetified-play-services-base-17.0.0\AndroidManifest.xml:23:9-26:75
+163            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+163-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\Winner\AppData\Local\Temp\cursor-sandbox-cache\ed579510f1785ae475b9a8796467517e\gradle\caches\transforms-4\61b32aa7ef714986e12f1df714d8e4e8\transformed\jetified-play-services-base-17.0.0\AndroidManifest.xml:24:13-79
+164            android:exported="false"
+164-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\Winner\AppData\Local\Temp\cursor-sandbox-cache\ed579510f1785ae475b9a8796467517e\gradle\caches\transforms-4\61b32aa7ef714986e12f1df714d8e4e8\transformed\jetified-play-services-base-17.0.0\AndroidManifest.xml:25:13-37
+165            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+165-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\Winner\AppData\Local\Temp\cursor-sandbox-cache\ed579510f1785ae475b9a8796467517e\gradle\caches\transforms-4\61b32aa7ef714986e12f1df714d8e4e8\transformed\jetified-play-services-base-17.0.0\AndroidManifest.xml:26:13-72
+166
+167        <provider
+167-->[com.google.firebase:firebase-common:19.0.0] C:\Users\Winner\AppData\Local\Temp\cursor-sandbox-cache\ed579510f1785ae475b9a8796467517e\gradle\caches\transforms-4\ddae365d42a7a80f79156ede0d95a53b\transformed\jetified-firebase-common-19.0.0\AndroidManifest.xml:12:9-16:39
+168            android:name="com.google.firebase.provider.FirebaseInitProvider"
+168-->[com.google.firebase:firebase-common:19.0.0] C:\Users\Winner\AppData\Local\Temp\cursor-sandbox-cache\ed579510f1785ae475b9a8796467517e\gradle\caches\transforms-4\ddae365d42a7a80f79156ede0d95a53b\transformed\jetified-firebase-common-19.0.0\AndroidManifest.xml:13:13-77
+169            android:authorities="org.scratchjr.androidfree.firebaseinitprovider"
+169-->[com.google.firebase:firebase-common:19.0.0] C:\Users\Winner\AppData\Local\Temp\cursor-sandbox-cache\ed579510f1785ae475b9a8796467517e\gradle\caches\transforms-4\ddae365d42a7a80f79156ede0d95a53b\transformed\jetified-firebase-common-19.0.0\AndroidManifest.xml:14:13-72
+170            android:exported="false"
+170-->[com.google.firebase:firebase-common:19.0.0] C:\Users\Winner\AppData\Local\Temp\cursor-sandbox-cache\ed579510f1785ae475b9a8796467517e\gradle\caches\transforms-4\ddae365d42a7a80f79156ede0d95a53b\transformed\jetified-firebase-common-19.0.0\AndroidManifest.xml:15:13-37
+171            android:initOrder="100" />
+171-->[com.google.firebase:firebase-common:19.0.0] C:\Users\Winner\AppData\Local\Temp\cursor-sandbox-cache\ed579510f1785ae475b9a8796467517e\gradle\caches\transforms-4\ddae365d42a7a80f79156ede0d95a53b\transformed\jetified-firebase-common-19.0.0\AndroidManifest.xml:16:13-36
+172
+173        <meta-data
+173-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\Winner\AppData\Local\Temp\cursor-sandbox-cache\ed579510f1785ae475b9a8796467517e\gradle\caches\transforms-4\ad4d0519b9edb573597fb3e2c19b6e96\transformed\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
+174            android:name="com.google.android.gms.version"
+174-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\Winner\AppData\Local\Temp\cursor-sandbox-cache\ed579510f1785ae475b9a8796467517e\gradle\caches\transforms-4\ad4d0519b9edb573597fb3e2c19b6e96\transformed\jetified-play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
+175            android:value="@integer/google_play_services_version" />
+175-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\Winner\AppData\Local\Temp\cursor-sandbox-cache\ed579510f1785ae475b9a8796467517e\gradle\caches\transforms-4\ad4d0519b9edb573597fb3e2c19b6e96\transformed\jetified-play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
+176    </application>
+177
+178</manifest>
